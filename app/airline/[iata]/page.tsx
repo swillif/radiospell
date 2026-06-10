@@ -7,7 +7,9 @@ import { NATO, NATO_NUMBERS } from '@/data/alphabets';
 type Airline = typeof airlines[number];
 
 export async function generateStaticParams() {
-  return (airlines as Airline[]).map(a => ({ iata: a.iata }));
+  return (airlines as Airline[])
+    .filter(a => /^[A-Z0-9]{2}$/i.test(a.iata))
+    .map(a => ({ iata: a.iata }));
 }
 
 export async function generateMetadata({ params }: { params: { iata: string } }): Promise<Metadata> {
