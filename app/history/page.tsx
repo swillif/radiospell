@@ -53,6 +53,40 @@ export default function HistoryPage() {
         </div>
       </section>
 
+      <section className="mb-8">
+        <h2 className="text-xl font-bold mb-3">Sources &amp; Further Reading</h2>
+        <div className="space-y-3 text-sm">
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="font-semibold text-gray-800">ICAO Annex 10, Volume II — Aeronautical Telecommunications</div>
+            <p className="text-gray-500 mt-1">The official ICAO document that defines the International Radiotelephony Spelling Alphabet. Chapter 5 specifies all 26 code words and number pronunciation standards. Available from the <a href="https://store.icao.int/" className="text-amber-600 hover:underline" target="_blank" rel="noopener noreferrer">ICAO Store</a>.</p>
+          </div>
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="font-semibold text-gray-800">NATO STANAG 3680 — Radiotelephony Spelling Alphabet</div>
+            <p className="text-gray-500 mt-1">The NATO Standardization Agreement that formally adopted the ICAO alphabet for all NATO military forces. Ensures interoperability across all 31 member nations.</p>
+          </div>
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="font-semibold text-gray-800">APCO International — History of Public Safety Communications</div>
+            <p className="text-gray-500 mt-1">Documentation from the Association of Public-Safety Communications Officials on the development of the 1940 APCO spelling alphabet and its 1974 transition to NATO. Visit <a href="https://www.apcointl.org/" className="text-amber-600 hover:underline" target="_blank" rel="noopener noreferrer">apcointl.org</a>.</p>
+          </div>
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="font-semibold text-gray-800">ITU Radio Regulations — Appendix 14</div>
+            <p className="text-gray-500 mt-1">The International Telecommunication Union&apos;s specification of the phonetic alphabet for international radio communication, predating and influencing the ICAO/NATO standard. Available from <a href="https://www.itu.int/" className="text-amber-600 hover:underline" target="_blank" rel="noopener noreferrer">itu.int</a>.</p>
+          </div>
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="font-semibold text-gray-800">Jean-Paul Vinay — &quot;A Revised Spelling Alphabet&quot; (ICAO Bulletin, 1955)</div>
+            <p className="text-gray-500 mt-1">The original paper by Professor Jean-Paul Vinay of the Université de Montréal describing the linguistic testing methodology used to select the 26 code words across speakers of 31 nations.</p>
+          </div>
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="font-semibold text-gray-800">DIN 5009:2022 — Spelling Alphabet for Information Transfer (German Standard)</div>
+            <p className="text-gray-500 mt-1">The 2022 revision of the German spelling alphabet standard, replacing traditional personal names with German city names. Published by the Deutsches Institut für Normung. Available from <a href="https://www.din.de/" className="text-amber-600 hover:underline" target="_blank" rel="noopener noreferrer">din.de</a>.</p>
+          </div>
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div className="font-semibold text-gray-800">FAA Aeronautical Information Manual (AIM) — Chapter 4, Section 2</div>
+            <p className="text-gray-500 mt-1">The FAA&apos;s pilot/controller glossary and radiotelephony procedures, including the phonetic alphabet and number pronunciation standards for US airspace. Free at <a href="https://www.faa.gov/air_traffic/publications/atpubs/aim_html/" className="text-amber-600 hover:underline" target="_blank" rel="noopener noreferrer">faa.gov</a>.</p>
+          </div>
+        </div>
+      </section>
+
       <div className="border-t pt-6 flex flex-wrap gap-3">
         <a href="/nato-phonetic-alphabet/" className="text-sm bg-gray-100 px-3 py-1.5 rounded hover:bg-gray-200">Full NATO Alphabet</a>
         <a href="/police-alphabet/" className="text-sm bg-gray-100 px-3 py-1.5 rounded hover:bg-gray-200">Police Alphabet</a>
