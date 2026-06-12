@@ -19,7 +19,7 @@ export default function PrivacyPage() {
       <h2 className="text-xl font-bold mt-6 mb-3 text-gray-900">Changes</h2>
       <p className="mb-4">We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page with an updated revision date.</p>
       <h2 className="text-xl font-bold mt-6 mb-3 text-gray-900">Contact</h2>
-      <p className="mb-4">If you have questions about this Privacy Policy, please contact us through the About page.</p>
+      <p className="mb-4">If you have questions about this Privacy Policy, please contact us at <a href="mailto:contact@radiospell.com" className="text-amber-600 hover:underline">contact@radiospell.com</a>.</p>
     </article>
   );
 }
