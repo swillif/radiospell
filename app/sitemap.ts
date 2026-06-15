@@ -16,6 +16,7 @@ export default function sitemap() {
     '/phonetic-alphabet-for-ham-radio/', '/phonetic-alphabet-for-travel/',
     '/how-to-read-airline-confirmation-codes/', '/confusing-letters-phone/',
     '/german-phonetic-alphabet/', '/french-phonetic-alphabet/', '/spanish-phonetic-alphabet/',
+    '/guides/',
     '/privacy/', '/about/',
   ].map(path => ({
     url: `${BASE}${path}`,

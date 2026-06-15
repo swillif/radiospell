@@ -12,13 +12,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ2K8FWYQT"></script>
-        <script dangerouslySetInnerHTML={{__html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-TZ2K8FWYQT');
-        `}} />
       <body className="bg-white text-gray-900 antialiased font-sans">
 
         {/* HEADER */}
@@ -34,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/airline-codes/" className="hover:text-amber-600 transition">Airlines</a>
               <a href="/quiz/" className="hover:text-amber-600 transition">Quiz</a>
               <a href="/history/" className="hover:text-amber-600 transition">History</a>
+              <a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700 transition">All Guides ✦</a>
             </nav>
             {/* Mobile menu button - implement with client component */}
             <button className="md:hidden text-gray-600 text-2xl" aria-label="Menu">☰</button>
@@ -71,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <ul className="space-y-2 text-gray-500">
                   <li><a href="/" className="hover:text-amber-600">Phonetic Converter</a></li>
                   <li><a href="/quiz/" className="hover:text-amber-600">Practice Quiz</a></li>
+                  <li><a href="/spell-my-name/" className="hover:text-amber-600">Spell My Name</a></li>
                   <li><a href="/phonetic-alphabet-chart/" className="hover:text-amber-600">Printable Chart</a></li>
                   <li><a href="/metar-decoder/" className="hover:text-amber-600">METAR Decoder</a></li>
                 </ul>
@@ -81,6 +76,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li><a href="/nato-phonetic-alphabet/" className="hover:text-amber-600">NATO / ICAO</a></li>
                   <li><a href="/military-alphabet/" className="hover:text-amber-600">Military</a></li>
                   <li><a href="/police-alphabet/" className="hover:text-amber-600">Police (LAPD)</a></li>
+                  <li><a href="/german-phonetic-alphabet/" className="hover:text-amber-600">German</a></li>
+                  <li><a href="/french-phonetic-alphabet/" className="hover:text-amber-600">French</a></li>
+                  <li><a href="/spanish-phonetic-alphabet/" className="hover:text-amber-600">Spanish</a></li>
                 </ul>
               </div>
               <div>
@@ -89,6 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li><a href="/airport-codes/" className="hover:text-amber-600">Airport Codes (7,900+)</a></li>
                   <li><a href="/airline-codes/" className="hover:text-amber-600">Airlines (990+)</a></li>
                   <li><a href="/aviation-numbers/" className="hover:text-amber-600">Aviation Numbers</a></li>
+                  <li><a href="/how-to-read-airline-confirmation-codes/" className="hover:text-amber-600">Confirmation Codes</a></li>
                 </ul>
               </div>
               <div>
@@ -97,6 +96,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li><a href="/history/" className="hover:text-amber-600">History</a></li>
                   <li><a href="/which-alphabet/" className="hover:text-amber-600">Which Alphabet?</a></li>
                   <li><a href="/how-to-spell-over-the-phone/" className="hover:text-amber-600">Spelling Over the Phone</a></li>
+                  <li><a href="/confusing-letters-phone/" className="hover:text-amber-600">Confusing Letters</a></li>
+                  <li><a href="/phonetic-alphabet-for-call-centers/" className="hover:text-amber-600">For Call Centers</a></li>
+                  <li><a href="/phonetic-alphabet-for-it-support/" className="hover:text-amber-600">For IT Support</a></li>
+                  <li><a href="/phonetic-alphabet-for-travel/" className="hover:text-amber-600">For Travelers</a></li>
+                  <li><a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700">All Guides →</a></li>
                 </ul>
               </div>
             </div>
