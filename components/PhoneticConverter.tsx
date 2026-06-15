@@ -107,18 +107,77 @@ export default function PhoneticConverter() {
                 <div className="font-mono text-sm text-green-700 leading-relaxed">{readout}</div>
               </div>
 
-              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-5">
                 <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Phone Script</div>
                 <div className="text-sm text-gray-700 leading-relaxed">
                   {converted.filter(c => c.type !== 'space' && c.type !== 'symbol').map(c => `${c.ch} as in ${c.word}`).join(', ')}
                 </div>
               </div>
+
+              {/* You might also like */}
+              <div className="border-t pt-5">
+                <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">You might also like</div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  <a href="/quiz/" className="block p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-center">
+                    <div className="text-lg mb-0.5">🧠</div>
+                    <div className="text-sm font-semibold text-gray-800">Take the Quiz</div>
+                    <div className="text-[11px] text-gray-500">Test your knowledge</div>
+                  </a>
+                  <a href="/spell-my-name/" className="block p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-center">
+                    <div className="text-lg mb-0.5">🪪</div>
+                    <div className="text-sm font-semibold text-gray-800">Spell My Name</div>
+                    <div className="text-[11px] text-gray-500">Shareable name card</div>
+                  </a>
+                  <a href="/phonetic-alphabet-chart/" className="block p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-center">
+                    <div className="text-lg mb-0.5">🖨️</div>
+                    <div className="text-sm font-semibold text-gray-800">Print Chart</div>
+                    <div className="text-[11px] text-gray-500">Free desk reference</div>
+                  </a>
+                  <a href="/airport-codes/" className="block p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-center">
+                    <div className="text-lg mb-0.5">✈️</div>
+                    <div className="text-sm font-semibold text-gray-800">Airport Codes</div>
+                    <div className="text-[11px] text-gray-500">7,900+ airports</div>
+                  </a>
+                  <a href="/airline-codes/" className="block p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-center">
+                    <div className="text-lg mb-0.5">🛫</div>
+                    <div className="text-sm font-semibold text-gray-800">Airline Callsigns</div>
+                    <div className="text-[11px] text-gray-500">990+ airlines</div>
+                  </a>
+                  <a href="/nato-phonetic-alphabet/" className="block p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-center">
+                    <div className="text-lg mb-0.5">📋</div>
+                    <div className="text-sm font-semibold text-gray-800">Full A-Z Table</div>
+                    <div className="text-[11px] text-gray-500">Complete reference</div>
+                  </a>
+                </div>
+              </div>
             </>
           ) : (
-            <div className="text-center py-12 text-gray-400">
-              <div className="text-5xl mb-3">✈</div>
-              <p className="text-base">Type a confirmation code, name, or any text above</p>
-              <p className="text-sm mt-1">Click any letter chip to hear its pronunciation</p>
+            <div className="py-6">
+              <div className="text-center text-gray-400 mb-6">
+                <div className="text-5xl mb-2">✈</div>
+                <p className="text-base">Type anything above, or try an example:</p>
+              </div>
+              {/* Clickable examples */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4">
+                {[
+                  { label: 'Airline Code', example: 'UA1234', icon: '✈️' },
+                  { label: 'Confirmation', example: 'BK7F9X', icon: '🎫' },
+                  { label: 'Spell a Name', example: 'Johnson', icon: '👤' },
+                  { label: 'Email Address', example: 'jsmith@gmail.com', icon: '📧' },
+                  { label: 'License Plate', example: 'ABC 1234', icon: '🚗' },
+                  { label: 'Serial Number', example: 'SN48X2KP', icon: '🔧' },
+                ].map(ex => (
+                  <button key={ex.example} onClick={() => setInput(ex.example)}
+                    className="flex items-center gap-2.5 p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-left">
+                    <span className="text-lg">{ex.icon}</span>
+                    <div>
+                      <div className="text-xs text-gray-500">{ex.label}</div>
+                      <div className="text-sm font-mono font-semibold text-gray-800">{ex.example}</div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+              <p className="text-center text-xs text-gray-400">Click any example to see it converted instantly</p>
             </div>
           )}
         </>

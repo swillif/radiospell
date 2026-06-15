@@ -12,6 +12,9 @@ export default function sitemap() {
     '/metar-decoder/', '/airport-codes/', '/airline-codes/', '/history/',
     '/which-alphabet/', '/aviation-numbers/', '/how-to-spell-over-the-phone/',
     '/phonetic-alphabet-for-call-centers/', '/phonetic-alphabet-for-healthcare/',
+    '/phonetic-alphabet-for-it-support/', '/phonetic-alphabet-for-shipping/',
+    '/phonetic-alphabet-for-ham-radio/', '/phonetic-alphabet-for-travel/',
+    '/how-to-read-airline-confirmation-codes/', '/confusing-letters-phone/',
     '/german-phonetic-alphabet/', '/french-phonetic-alphabet/', '/spanish-phonetic-alphabet/',
     '/privacy/', '/about/',
   ].map(path => ({

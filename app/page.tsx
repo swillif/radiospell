@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import PhoneticConverter from '@/components/PhoneticConverter';
+import DidYouKnow from '@/components/DidYouKnow';
 
 export const metadata: Metadata = {
   title: 'Phonetic Alphabet Converter — Instantly Spell Any Text | RadioSpell.com',
@@ -32,6 +33,11 @@ export default function HomePage() {
 
       <section className="max-w-3xl mx-auto px-4 pb-8">
         <PhoneticConverter />
+      </section>
+
+      {/* DID YOU KNOW */}
+      <section className="max-w-3xl mx-auto px-4 pb-6">
+        <DidYouKnow />
       </section>
 
       {/* SEO CONTENT */}

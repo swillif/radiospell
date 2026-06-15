@@ -54,6 +54,66 @@ export default function HistoryPage() {
       </section>
 
       <section className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">Spelling Alphabets Around the World</h2>
+        <p className="text-gray-600 leading-relaxed mb-6">While the NATO alphabet became the international standard, dozens of countries independently developed their own spelling alphabets — each reflecting their language, culture, and naming traditions. The challenge of distinguishing letters over voice communication is universal, but every culture solved it differently.</p>
+
+        <div className="space-y-4">
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇩🇪</span><h3 className="font-bold text-base">Germany — Names to Cities</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed mb-2">Germany&apos;s spelling alphabet (DIN 5009) originally used personal first names: Anton, Berta, Cäsar, Dora, Emil. These names were familiar to every German speaker and remained the standard for over a century. However, the alphabet had a dark chapter — during the Nazi era, Jewish names were systematically removed. &quot;David&quot; became &quot;Dora,&quot; &quot;Nathan&quot; became &quot;Nordpol,&quot; and &quot;Samuel&quot; became &quot;Siegfried.&quot; After reunification, Germany undertook a major revision, and in 2022, DIN officially replaced all person names with German city names: Aachen, Berlin, Chemnitz, Düsseldorf, Essen. Despite the official change, most Germans still use the traditional names in everyday conversation.</p>
+            <a href="/german-phonetic-alphabet/" className="text-xs font-semibold text-amber-600 hover:underline">See the full German alphabet →</a>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇫🇷</span><h3 className="font-bold text-base">France — Belle Époque Names</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed mb-2">The French spelling alphabet reads like a roster from the Belle Époque: Anatole, Berthe, Célestin, Désiré, Eugène, François, Gaston. These names were common in early 20th century France but have largely fallen out of fashion as baby names — making the alphabet itself a charming cultural time capsule. Interestingly, French was one of the three languages used to test NATO code words (alongside English and Spanish), ensuring that words like &quot;Alfa,&quot; &quot;Bravo,&quot; and &quot;Charlie&quot; would be intelligible to French speakers.</p>
+            <a href="/french-phonetic-alphabet/" className="text-xs font-semibold text-amber-600 hover:underline">See the full French alphabet →</a>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇪🇸</span><h3 className="font-bold text-base">Spain &amp; Latin America — Cities and Names</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed mb-2">The Spanish alphabet mixes personal names with beloved Spanish cities: Antonio, Barcelona, Carmen, Dolores, Enrique, Francia, Gerona. The word &quot;Barcelona&quot; for B is perhaps the most distinctive choice of any national alphabet — instantly recognizable worldwide. In Latin America, regional variations exist: some countries substitute local city names, while others have adopted NATO for domestic use. Spanish was the third ICAO testing language, ensuring the NATO alphabet works across the entire Spanish-speaking world.</p>
+            <a href="/spanish-phonetic-alphabet/" className="text-xs font-semibold text-amber-600 hover:underline">See the full Spanish alphabet →</a>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇮🇹</span><h3 className="font-bold text-base">Italy — A Map of the Nation</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed">Italy&apos;s spelling alphabet is essentially a geographic tour of the country: Ancona, Bologna, Como, Domodossola, Empoli, Firenze, Genova, Hotel (borrowed from NATO), Imola, Jolly, Kappa, Livorno, Milano, Napoli, Otranto, Palermo, Quadro, Roma, Savona, Torino, Udine, Venezia, Washington (borrowed), Xilofono, Yacht, Zara. Italians take particular pride in &quot;Domodossola&quot; for D — a small Alpine city that gained nationwide fame simply for being the D-word everyone knows from phone calls.</p>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇹🇷</span><h3 className="font-bold text-base">Turkey — Anatolian Geography</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed">Turkey&apos;s alphabet uses Turkish cities and geographic regions: Adana, Bolu, Ceyhan, Denizli, Edirne, Finike, Giresun. The choices span the entire country from Edirne on the European border to Hatay on the Syrian border, reflecting Turkey&apos;s geographic diversity. The letter W, uncommon in Turkish, uses &quot;Wolframyum&quot; (tungsten) — a scientific term borrowed because no Turkish city starts with W.</p>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇸🇪</span><h3 className="font-bold text-base">Sweden — Scandinavian First Names</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed">Sweden&apos;s alphabet uses classic Scandinavian names: Adam, Bertil, Cesar, David, Erik, Filip, Gustav, Helge, Ivar, Johan, Kalle, Ludvig, Martin, Niklas. The Swedish alphabet has an extra challenge: it includes three additional letters (Å, Ä, Ö) not found in the English alphabet, each with their own code word. This makes it one of the few national alphabets longer than 26 entries.</p>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇯🇵</span><h3 className="font-bold text-base">Japan — Iroha Poem Tradition</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed">Japan&apos;s approach to phonetic communication is fundamentally different. For their kana syllabaries (hiragana and katakana), Japanese uses a system based on common words beginning with each syllable. The traditional ordering follows the ancient &quot;Iroha&quot; poem — a Buddhist verse that uses each of the 47 basic kana exactly once. Modern Japanese telecommunications and aviation use the NATO alphabet for Latin characters, creating a bilingual communication system unique in the world.</p>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇮🇳</span><h3 className="font-bold text-base">India — Multilingual Complexity</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed">India presents perhaps the most complex phonetic communication challenge in the world. With 22 officially recognized languages, 13 different scripts, and hundreds of dialects, no single national spelling alphabet could serve the entire country. Indian aviation and military use the NATO alphabet, but domestic phone communication often defaults to common Hindi/English names: Anil, Bombay, Calcutta, Delhi — reflecting major cities familiar across language boundaries. The Indian Postal Service historically used its own alphabet based on common Indian names and cities.</p>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🇧🇷</span><h3 className="font-bold text-base">Brazil &amp; Portugal — Geographic Identity</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed">The Portuguese spelling alphabet uses Portuguese cities: Aveiro, Braga, Coimbra, Dafundo, Évora, Faro, Guarda. Brazil, despite sharing the language, developed its own informal variants using Brazilian cities and names. This linguistic split mirrors the broader differences between European and Brazilian Portuguese — two versions of the same language with distinct pronunciation, vocabulary, and cultural reference points.</p>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-5">
+            <div className="flex items-center gap-2 mb-2"><span className="text-xl">🌍</span><h3 className="font-bold text-base">The Universal Challenge</h3></div>
+            <p className="text-sm text-gray-600 leading-relaxed">What&apos;s remarkable about this global survey is that every literate culture independently arrived at the same solution: replace single letters with longer, more distinctive words. Whether it&apos;s German cities, French names, Italian geography, Japanese poetry, or NATO code words — the human need to communicate precisely over imperfect channels is truly universal. The NATO alphabet&apos;s enduring success lies in being the first system rigorously tested across languages, making it the closest thing we have to a universal spelling standard.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-8">
         <h2 className="text-xl font-bold mb-3">Sources &amp; Further Reading</h2>
         <div className="space-y-3 text-sm">
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
