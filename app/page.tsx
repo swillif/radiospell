@@ -23,7 +23,7 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="max-w-3xl mx-auto text-center pt-10 pb-6 px-4">
+      <section className="max-w-3xl mx-auto text-center pt-10 pb-4 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">Phonetic Alphabet Converter</h1>
         <p className="text-gray-500 max-w-xl mx-auto">
           Type any text — a name, confirmation code, serial number, or password —
@@ -31,13 +31,13 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className="max-w-3xl mx-auto px-4 pb-8">
-        <PhoneticConverter />
+      {/* DID YOU KNOW — above converter to grab attention immediately */}
+      <section className="max-w-3xl mx-auto px-4 pb-4">
+        <DidYouKnow />
       </section>
 
-      {/* DID YOU KNOW */}
-      <section className="max-w-3xl mx-auto px-4 pb-6">
-        <DidYouKnow />
+      <section className="max-w-3xl mx-auto px-4 pb-8">
+        <PhoneticConverter />
       </section>
 
       {/* SEO CONTENT */}
