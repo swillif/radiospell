@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/nato-phonetic-alphabet/" className="hover:text-amber-600 transition">NATO Alphabet</a>
               <a href="/airport-codes/" className="hover:text-amber-600 transition">Airports</a>
               <a href="/airline-codes/" className="hover:text-amber-600 transition">Airlines</a>
-              <a href="/quiz/" className="hover:text-amber-600 transition">Quiz</a>
+              <a href="/metar-decoder/" className="hover:text-amber-600 transition">METAR Decoder</a>
               <a href="/history/" className="hover:text-amber-600 transition">History</a>
               <a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700 transition">All Guides ✦</a>
             </nav>

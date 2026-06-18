@@ -118,6 +118,12 @@ export default function PhoneticConverter() {
               <div className="border-t pt-5">
                 <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">You might also like</div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                  <a href="/metar-decoder/" className="relative block p-3 bg-amber-50 border-2 border-amber-300 rounded-lg hover:border-amber-400 hover:bg-amber-100 transition text-center">
+                    <span className="absolute -top-2 -right-2 text-[9px] font-bold bg-amber-500 text-white px-1.5 py-0.5 rounded-full">NEW</span>
+                    <div className="text-lg mb-0.5">🌦️</div>
+                    <div className="text-sm font-semibold text-gray-800">METAR Decoder</div>
+                    <div className="text-[11px] text-gray-500">Decode weather reports</div>
+                  </a>
                   <a href="/quiz/" className="block p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-center">
                     <div className="text-lg mb-0.5">🧠</div>
                     <div className="text-sm font-semibold text-gray-800">Take the Quiz</div>
