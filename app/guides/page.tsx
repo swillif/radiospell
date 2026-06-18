@@ -3,52 +3,59 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'All Guides & Tools — Phonetic Alphabet, Aviation, Industry Guides',
   description: 'Browse all RadioSpell.com tools, guides, and reference pages. Phonetic alphabet converter, quiz, airport codes, airline callsigns, industry guides, and more.',
-  keywords: 'phonetic alphabet guides, NATO alphabet resources, aviation reference, spelling alphabet tools',
 };
 
 export default function GuidesPage() {
   const sections = [
     {
-      title: 'Interactive Tools',
-      icon: '🛠️',
+      title: 'Interactive Tools', icon: '🛠️',
       links: [
         { href: '/', label: 'Phonetic Converter', desc: 'Convert any text to NATO phonetic alphabet instantly' },
         { href: '/quiz/', label: 'Practice Quiz', desc: 'Test your knowledge with interactive flashcards' },
         { href: '/spell-my-name/', label: 'Spell My Name', desc: 'Generate a shareable phonetic name card' },
         { href: '/metar-decoder/', label: 'METAR Weather Decoder', desc: 'Decode aviation weather reports' },
         { href: '/phonetic-alphabet-chart/', label: 'Printable Cheat Sheet', desc: 'Free desk reference you can print' },
+        { href: '/phonetic-alphabet-poster/', label: 'Phonetic Alphabet Poster', desc: 'Wall chart for offices and classrooms' },
+        { href: '/nato-alphabet-quiz-printable/', label: 'Printable Quiz Worksheet', desc: 'Student quiz + instructor answer key' },
       ],
     },
     {
-      title: 'Phonetic Alphabets',
-      icon: '🔤',
+      title: 'Phonetic Alphabets', icon: '🔤',
       links: [
         { href: '/nato-phonetic-alphabet/', label: 'NATO / ICAO Alphabet', desc: 'The international standard — Alfa to Zulu' },
+        { href: '/icao-phonetic-alphabet/', label: 'ICAO Phonetic Alphabet', desc: 'The official aviation designation' },
         { href: '/military-alphabet/', label: 'Military Alphabet', desc: 'Used by all US armed forces & NATO nations' },
         { href: '/police-alphabet/', label: 'Police Alphabet (LAPD)', desc: 'Adam Boy Charles — compared to NATO' },
+        { href: '/phonetic-alphabet-for-police/', label: 'Police Full Guide', desc: '10-codes, NYPD vs LAPD, agency differences' },
         { href: '/alpha-bravo-charlie/', label: 'Alpha Bravo Charlie', desc: 'What it means and where it comes from' },
-        { href: '/german-phonetic-alphabet/', label: 'German (DIN 5009)', desc: 'Anton Berta Cäsar — the German spelling alphabet' },
-        { href: '/french-phonetic-alphabet/', label: 'French', desc: 'Anatole Berthe Célestin — French spelling alphabet' },
-        { href: '/spanish-phonetic-alphabet/', label: 'Spanish', desc: 'Antonio Barcelona Carmen — Spanish spelling alphabet' },
+        { href: '/german-phonetic-alphabet/', label: 'German (DIN 5009)', desc: 'Anton Berta Cäsar' },
+        { href: '/french-phonetic-alphabet/', label: 'French', desc: 'Anatole Berthe Célestin' },
+        { href: '/spanish-phonetic-alphabet/', label: 'Spanish', desc: 'Antonio Barcelona Carmen' },
       ],
     },
     {
-      title: 'Aviation Reference',
-      icon: '✈️',
+      title: 'Aviation Reference', icon: '✈️',
       links: [
         { href: '/airport-codes/', label: 'Airport Codes', desc: 'Search 7,900+ airports with phonetic spelling' },
         { href: '/airline-codes/', label: 'Airline Codes & Callsigns', desc: '990+ airlines with radio callsigns' },
         { href: '/aviation-numbers/', label: 'Aviation Number Pronunciation', desc: 'How pilots say niner, tree, fife' },
         { href: '/metar-decoder/', label: 'METAR/TAF Decoder', desc: 'Decode aviation weather reports' },
+        { href: '/military-time-and-phonetic-alphabet/', label: 'Military Time & Phonetic Alphabet', desc: 'Zulu time, 24-hour clock, and NATO together' },
       ],
     },
     {
-      title: 'Industry Guides',
-      icon: '📋',
+      title: 'Phone & Communication Guides', icon: '📞',
       links: [
         { href: '/how-to-spell-over-the-phone/', label: 'How to Spell Over the Phone', desc: 'Practical guide for everyday calls' },
-        { href: '/how-to-read-airline-confirmation-codes/', label: 'Airline Confirmation Codes', desc: 'Spell PNR and booking references' },
+        { href: '/spell-email-phonetically/', label: 'Spell Email Addresses', desc: 'Dots, underscores, domains — all covered' },
+        { href: '/phonetic-alphabet-numbers/', label: 'Numbers Over the Phone', desc: 'Zero vs Oh, and other number pitfalls' },
         { href: '/confusing-letters-phone/', label: 'Most Confusing Letters', desc: 'B/D, M/N, F/S — the worst offenders' },
+        { href: '/how-to-read-airline-confirmation-codes/', label: 'Airline Confirmation Codes', desc: 'Spell PNR and booking references' },
+      ],
+    },
+    {
+      title: 'Industry Guides', icon: '📋',
+      links: [
         { href: '/phonetic-alphabet-for-call-centers/', label: 'For Call Centers', desc: 'Training guide with sample scripts' },
         { href: '/phonetic-alphabet-for-healthcare/', label: 'For Healthcare', desc: 'Preventing medication and patient ID errors' },
         { href: '/phonetic-alphabet-for-it-support/', label: 'For IT Support', desc: 'Serial numbers, MAC addresses, passwords' },
@@ -58,9 +65,10 @@ export default function GuidesPage() {
       ],
     },
     {
-      title: 'Learn',
-      icon: '📚',
+      title: 'Fun & Learning', icon: '🎓',
       links: [
+        { href: '/phonetic-alphabet-for-kids/', label: 'For Kids', desc: 'Fun facts and memory tricks for children' },
+        { href: '/what-does-bravo-zulu-mean/', label: 'Military Slang Guide', desc: 'Bravo Zulu, Oscar Mike, Lima Charlie explained' },
         { href: '/history/', label: 'History of Spelling Alphabets', desc: 'From WWI to NATO — plus alphabets around the world' },
         { href: '/which-alphabet/', label: 'Which Alphabet Should I Use?', desc: 'Decision guide for every situation' },
       ],
@@ -70,7 +78,7 @@ export default function GuidesPage() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-2">All Guides &amp; Tools</h1>
-      <p className="text-gray-500 mb-8">Everything on RadioSpell.com in one place. Tools, alphabets, aviation reference, industry guides, and more.</p>
+      <p className="text-gray-500 mb-8">Everything on RadioSpell.com in one place — {sections.reduce((t,s)=>t+s.links.length,0)} pages covering phonetic alphabets, aviation, communication guides, and more.</p>
 
       {sections.map(section => (
         <section key={section.title} className="mb-8">
