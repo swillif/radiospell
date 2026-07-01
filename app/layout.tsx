@@ -12,6 +12,18 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ2K8FWYQT"></script>
+        <script dangerouslySetInnerHTML={{__html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TZ2K8FWYQT');
+        `}} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+      </head>
       <body className="bg-white text-gray-900 antialiased font-sans">
 
         {/* HEADER */}
@@ -29,34 +41,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/history/" className="hover:text-amber-600 transition">History</a>
               <a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700 transition">All Guides ✦</a>
             </nav>
-            {/* Mobile menu button - implement with client component */}
             <button className="md:hidden text-gray-600 text-2xl" aria-label="Menu">☰</button>
           </div>
         </header>
 
-        {/* AD SLOT: TOP LEADERBOARD
-        <div className="max-w-5xl mx-auto px-4 py-2 text-center">
-          <ins className="adsbygoogle" style={{display:'block'}}
-            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-            data-ad-slot="1111111111"
-            data-ad-format="auto"
-            data-full-width-responsive="true" />
-        </div>
-        */}
-
         <main className="min-h-screen">{children}</main>
 
-        {/* AD SLOT: BOTTOM
-        <div className="max-w-5xl mx-auto px-4 py-2 text-center">
-          <ins className="adsbygoogle" style={{display:'block'}}
-            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-            data-ad-slot="2222222222"
-            data-ad-format="auto"
-            data-full-width-responsive="true" />
-        </div>
-        */}
-
-        {/* SEO FOOTER */}
+        {/* FOOTER */}
         <footer className="border-t mt-16 bg-gray-50">
           <div className="max-w-5xl mx-auto px-4 py-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 text-sm">
@@ -113,10 +104,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
-
-        {/* ADSENSE SCRIPT — uncomment after approval
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous" />
-        */}
       </body>
     </html>
   );
