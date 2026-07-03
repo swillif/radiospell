@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description: 'Free NATO phonetic alphabet converter, airport codes, airline callsigns, and aviation reference. Spell any text clearly over the phone.',
   keywords: 'phonetic alphabet, NATO alphabet, alpha bravo charlie, airport codes, airline codes',
   openGraph: { type: 'website', locale: 'en_US', url: 'https://radiospell.com', siteName: 'RadioSpell.com' },
+  alternates: { canonical: 'https://radiospell.com' },
 };
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
