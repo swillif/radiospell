@@ -17,7 +17,13 @@ export default function AirportSearch({ airports }: { airports: any[] }) {
   return (
     <>
       <input type="text" value={q} onChange={e => setQ(e.target.value)} placeholder="Search… DEN, Denver, Heathrow, UK"
-        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none mb-4" />
+        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none mb-3" />
+
+      <div className="flex items-center gap-2 mb-4 text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">
+        <span>👆</span>
+        <span>Tap any <span className="font-mono font-bold text-amber-700 bg-amber-100 border border-amber-300 rounded px-1.5">CODE</span> to see that airport&apos;s phonetic spelling, airlines, nearby airports, and maps.</span>
+      </div>
+
       <div className="overflow-x-auto border rounded-lg">
         <table className="w-full text-sm">
           <thead><tr className="bg-gray-50 border-b">
@@ -26,15 +32,28 @@ export default function AirportSearch({ airports }: { airports: any[] }) {
             <th className="text-left py-2 px-3 font-semibold">City</th>
             <th className="text-left py-2 px-3 font-semibold">Country</th>
             <th className="text-left py-2 px-3 font-semibold">Phonetic</th>
+            <th className="py-2 px-3"></th>
           </tr></thead>
           <tbody>
             {filtered.map((a: any) => (
-              <tr key={a.iata} className="border-b border-gray-100 hover:bg-amber-50">
-                <td className="py-2 px-3 font-mono font-bold"><a href={`/airport/${a.iata}/`} className="text-amber-600 hover:underline">{a.iata}</a></td>
-                <td className="py-2 px-3">{a.name}</td>
+              <tr key={a.iata} className="border-b border-gray-100 hover:bg-amber-50 transition group">
+                <td className="py-2 px-3">
+                  <a href={`/airport/${a.iata}/`}
+                     className="inline-block font-mono font-bold text-amber-700 bg-amber-100 border border-amber-300 rounded px-2 py-0.5 group-hover:bg-amber-200 transition">
+                    {a.iata}
+                  </a>
+                </td>
+                <td className="py-2 px-3">
+                  <a href={`/airport/${a.iata}/`} className="hover:text-amber-700 hover:underline">{a.name}</a>
+                </td>
                 <td className="py-2 px-3">{a.city}</td>
                 <td className="py-2 px-3 text-gray-400">{a.country}</td>
                 <td className="py-2 px-3 font-mono text-xs text-green-700">{a.phonetic}</td>
+                <td className="py-2 px-3 text-right">
+                  <a href={`/airport/${a.iata}/`} className="text-amber-600 opacity-0 group-hover:opacity-100 transition text-xs font-semibold whitespace-nowrap">
+                    Details →
+                  </a>
+                </td>
               </tr>
             ))}
           </tbody>
