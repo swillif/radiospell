@@ -8,11 +8,21 @@ export const metadata: Metadata = {
   keywords: 'phonetic alphabet, NATO alphabet, alpha bravo charlie, airport codes, airline codes',
   openGraph: { type: 'website', locale: 'en_US', url: 'https://radiospell.com', siteName: 'RadioSpell.com' },
   alternates: { canonical: 'https://radiospell.com' },
+  other: { 'google-adsense-account': 'ca-pub-4968149586636962' },
 };
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4968149586636962"
+          crossOrigin="anonymous"
+        />
+
+        {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ2K8FWYQT"></script>
         <script dangerouslySetInnerHTML={{__html: `
           window.dataLayer = window.dataLayer || [];
@@ -20,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config', 'G-TZ2K8FWYQT');
         `}} />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
