@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-for-healthcare/' },
   title: 'Phonetic Alphabet for Healthcare — Preventing Communication Errors',
   description: 'How healthcare professionals use phonetic spelling to prevent medication errors and patient misidentification. Critical safety practice.',
   keywords: 'healthcare phonetic alphabet, medical spelling, medication errors phonetic',

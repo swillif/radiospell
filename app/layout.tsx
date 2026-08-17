@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: { default: 'RadioSpell â€” Phonetic Alphabet Converter & Aviation Reference', template: '%s | RadioSpell.com' },
   description: 'Free NATO phonetic alphabet converter, airport codes, airline callsigns, and aviation reference. Spell any text clearly over the phone.',
   keywords: 'phonetic alphabet, NATO alphabet, alpha bravo charlie, airport codes, airline codes',
-  openGraph: { type: 'website', locale: 'en_US', url: 'https://radiospell.com', siteName: 'RadioSpell.com' },
+  openGraph: { type: 'website', locale: 'en_US', siteName: 'RadioSpell.com' },
   other: { 'google-adsense-account': 'ca-pub-4968149586636962' },
 };
 

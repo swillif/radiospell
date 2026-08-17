@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NATO, NATO_NUMBERS, MORSE } from '@/data/alphabets';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/icao-phonetic-alphabet/' },
   title: 'ICAO Phonetic Alphabet — The International Aviation Standard',
   description: 'The ICAO phonetic alphabet (International Civil Aviation Organization) — the same as NATO but officially designated for all international aviation. Complete A-Z with pronunciation.',
   keywords: 'ICAO phonetic alphabet, ICAO alphabet, aviation phonetic alphabet, international civil aviation alphabet, ICAO spelling alphabet',

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/history/' },
   title: 'History of the Phonetic Alphabet — From WWI to NATO',
   description: 'The complete history of spelling alphabets from WWI signal flags through the WWII Able Baker alphabet to the modern NATO/ICAO standard adopted in 1956.',
   keywords: 'history phonetic alphabet, Able Baker alphabet, NATO alphabet history, when was phonetic alphabet created',

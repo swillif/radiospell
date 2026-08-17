@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-export const metadata: Metadata = { title: 'About RadioSpell.com', description: 'About RadioSpell.com — the free phonetic alphabet converter and aviation reference tool.' };
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/about/' }, title: 'About RadioSpell.com', description: 'About RadioSpell.com — the free phonetic alphabet converter and aviation reference tool.' };
 export default function AboutPage() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-8">

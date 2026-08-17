@@ -3,6 +3,7 @@ import PhoneticConverter from '@/components/PhoneticConverter';
 import DidYouKnow from '@/components/DidYouKnow';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/' },
   title: 'Phonetic Alphabet Converter — Instantly Spell Any Text | RadioSpell.com',
   description: 'Free NATO phonetic alphabet converter. Type any text, name, or confirmation code and instantly see it spelled in the NATO/ICAO phonetic alphabet. Supports 5+ languages and audio.',
 };

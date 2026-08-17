@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NATO, LAPD } from '@/data/alphabets';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/police-alphabet/' },
   title: 'Police Phonetic Alphabet — LAPD/APCO vs NATO Comparison',
   description: 'The police phonetic alphabet (APCO/LAPD): Adam Boy Charles David. Side-by-side comparison with NATO. Learn which law enforcement agencies use which system.',
   keywords: 'police alphabet, police phonetic alphabet, LAPD radio alphabet, APCO alphabet, law enforcement spelling',

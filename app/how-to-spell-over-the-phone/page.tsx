@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/how-to-spell-over-the-phone/' },
   title: 'How to Spell Your Name Over the Phone — A Practical Guide',
   description: 'Stop repeating yourself on phone calls. Learn how to use the NATO phonetic alphabet to spell names, emails, and confirmation codes clearly every time.',
   keywords: 'spell name over phone, how to spell phonetically, phonetic alphabet phone calls',

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ALL_ALPHABETS, NATO } from '@/data/alphabets';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/german-phonetic-alphabet/' },
   title: 'German Phonetic Alphabet (DIN 5009) — Anton Berta Cäsar',
   description: 'The German spelling alphabet (DIN 5009): Anton, Berta, Cäsar, Dora, Emil. Complete A-Z with NATO comparison and interactive converter.',
   keywords: 'German phonetic alphabet, DIN 5009, Buchstabiertafel, German spelling alphabet',

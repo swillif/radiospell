@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NATO, NATO_NUMBERS, MORSE } from '@/data/alphabets';
 import PrintButton from './PrintButton';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-chart/' },
   title: 'Phonetic Alphabet Chart — Free Printable Cheat Sheet',
   description: 'Download a free printable NATO phonetic alphabet chart. Perfect for your desk, cubicle wall, or team. Includes Morse code and aviation numbers.',
   keywords: 'phonetic alphabet chart, printable phonetic alphabet, NATO alphabet PDF, phonetic alphabet poster',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import QuizGame from './QuizGame';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/quiz/' },
   title: 'NATO Phonetic Alphabet Quiz — Test Your Knowledge',
   description: 'Practice the NATO phonetic alphabet with interactive flashcards. Two modes: Letter→Word and Word→Letter. Track your score, accuracy, and streak.',
   keywords: 'phonetic alphabet quiz, NATO alphabet test, phonetic alphabet practice, learn NATO alphabet',

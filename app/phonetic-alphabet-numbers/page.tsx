@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-numbers/' },
   title: 'Phonetic Alphabet Numbers — How to Say Numbers Clearly Over the Phone',
   description: 'How to say numbers clearly over the phone using the NATO phonetic alphabet system. Avoid confusion between 1/7, 5/9, and zero/oh in customer service and everyday calls.',
   keywords: 'phonetic alphabet numbers, say numbers phone, number pronunciation phone, zero one two three phone call, avoid number confusion',

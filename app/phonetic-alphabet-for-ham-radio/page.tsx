@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { NATO, NATO_NUMBERS, MORSE } from '@/data/alphabets';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-for-ham-radio/' },
   title: 'Phonetic Alphabet for Ham Radio — Callsigns, Q-Codes & Best Practices',
   description: 'How amateur radio operators use the NATO phonetic alphabet for callsigns, signal reports, and communication. Includes Q-codes, RST system, and common practices.',
   keywords: 'ham radio phonetic alphabet, amateur radio spelling alphabet, ham radio callsign phonetic, Q codes ham radio',

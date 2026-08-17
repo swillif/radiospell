@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-for-it-support/' },
   title: 'Phonetic Alphabet for IT Support — Serial Numbers, MAC Addresses & Passwords',
   description: 'How IT support technicians use the NATO phonetic alphabet for serial numbers, license keys, MAC addresses, IP addresses, and passwords. Tips for distinguishing 0/O, 1/l/I.',
   keywords: 'IT support phonetic alphabet, serial number phonetic, MAC address spelling, tech support spelling alphabet',

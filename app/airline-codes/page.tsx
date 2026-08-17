@@ -3,6 +3,7 @@ import airlines from '@/data/airlines.json';
 import AirlineSearch from './AirlineSearch';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/airline-codes/' },
   title: 'Airline IATA/ICAO Codes & Radio Callsigns — Search 990+ Airlines',
   description: 'Search airline IATA codes, ICAO codes, and radio callsigns. Discover what pilots say on ATC frequencies for every major airline worldwide.',
 };

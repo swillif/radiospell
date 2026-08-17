@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/spell-email-phonetically/' },
   title: 'How to Spell an Email Address Over the Phone — Phonetic Guide',
   description: 'Step-by-step guide to spelling email addresses clearly over the phone using the NATO phonetic alphabet. Handle dots, underscores, hyphens, and domains without confusion.',
   keywords: 'spell email over phone, email address phonetic, how to say email address phone, spell email customer service, email address nato alphabet',

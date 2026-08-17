@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NATO, NATO_NUMBERS, MORSE } from '@/data/alphabets';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-poster/' },
   title: 'Phonetic Alphabet Poster — Free Printable Wall Chart',
   description: 'Free printable NATO phonetic alphabet poster for offices, call centers, classrooms, and desks. Print in large format for wall display or small format for desk reference.',
   keywords: 'phonetic alphabet poster, NATO alphabet wall chart, phonetic alphabet printable large, phonetic alphabet office poster, call center alphabet poster',

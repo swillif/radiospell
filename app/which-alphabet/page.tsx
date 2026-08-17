@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/which-alphabet/' },
   title: 'Which Phonetic Alphabet Should You Use? A Decision Guide',
   description: 'NATO, police, military, or country-specific? Find out which spelling alphabet is right for your situation — aviation, law enforcement, call centers, and more.',
   keywords: 'which phonetic alphabet, best spelling alphabet, NATO vs police alphabet',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NATO, NATO_NUMBERS, MORSE } from '@/data/alphabets';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/nato-phonetic-alphabet/' },
   title: 'NATO Phonetic Alphabet — Complete A-Z with Audio & Morse Code',
   description: 'The complete NATO phonetic alphabet from Alfa to Zulu. All 26 code words plus numbers with Morse code, pronunciation guide, and printable chart.',
   keywords: 'NATO phonetic alphabet, NATO alphabet, ICAO alphabet, Alfa Bravo Charlie, military alphabet',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import MetarTool from './MetarTool';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/metar-decoder/' },
   title: 'METAR Decoder — Decode Aviation Weather Reports Instantly',
   description: 'Paste any METAR or TAF string and decode every element — wind, visibility, clouds, temperature, altimeter. Free tool for pilots and aviation enthusiasts.',
   keywords: 'METAR decoder, decode METAR, aviation weather decoder, TAF decoder, METAR codes explained',

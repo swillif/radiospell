@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ALL_ALPHABETS, NATO } from '@/data/alphabets';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/spanish-phonetic-alphabet/' },
   title: 'Spanish Phonetic Alphabet — Antonio Barcelona Carmen',
   description: 'The Spanish spelling alphabet: Antonio, Barcelona, Carmen, Dolores. Complete A-Z with NATO comparison.',
   keywords: 'Spanish phonetic alphabet, Spanish spelling alphabet, alfabeto fonetico espanol',

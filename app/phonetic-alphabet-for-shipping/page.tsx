@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-for-shipping/' },
   title: 'Phonetic Alphabet for Shipping & Logistics — Container Numbers, BOL & Port Codes',
   description: 'How shipping and logistics professionals use the NATO phonetic alphabet for container numbers, bills of lading, port codes, and vessel names.',
   keywords: 'shipping phonetic alphabet, container number spelling, logistics communication, bill of lading phonetic',

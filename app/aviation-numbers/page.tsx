@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/aviation-numbers/' },
   title: 'Aviation Number Pronunciation — How Pilots Say Numbers',
   description: 'Learn how pilots and ATC pronounce numbers: niner for 9, tree for 3, fife for 5. Complete ICAO number pronunciation guide with examples.',
   keywords: 'aviation numbers, pilot number pronunciation, niner, tree three aviation, ICAO numbers',

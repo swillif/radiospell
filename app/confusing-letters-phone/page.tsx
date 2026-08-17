@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/confusing-letters-phone/' },
   title: 'Most Confusing Letters on Phone Calls — And How to Fix It',
   description: 'B or D? M or N? F or S? The most commonly confused letter pairs on phone calls and how the NATO phonetic alphabet solves each one.',
   keywords: 'confusing letters phone, B D P T sound same, M N confusion phone, letters that sound alike',

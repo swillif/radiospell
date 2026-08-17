@@ -4,6 +4,7 @@ import { NATO } from '@/data/alphabets';
 import AirportSearch from './AirportSearch';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/airport-codes/' },
   title: 'Airport IATA Codes — Search 7,900+ Airports with Phonetic Spelling',
   description: 'Search airport IATA codes by name, city, or country. Each code includes NATO phonetic spelling for clear communication on phone calls and radio.',
 };

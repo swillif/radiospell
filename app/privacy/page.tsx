@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-export const metadata: Metadata = { title: 'Privacy Policy', description: 'RadioSpell.com privacy policy. How we handle your data.' };
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/privacy/' }, title: 'Privacy Policy', description: 'RadioSpell.com privacy policy. How we handle your data.' };
 export default function PrivacyPage() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-8 text-gray-600 leading-relaxed">

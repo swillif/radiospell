@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/guides/' },
   title: 'All Guides & Tools — Phonetic Alphabet, Aviation, Industry Guides',
   description: 'Browse all RadioSpell.com tools, guides, and reference pages. Phonetic alphabet converter, quiz, airport codes, airline callsigns, industry guides, and more.',
 };

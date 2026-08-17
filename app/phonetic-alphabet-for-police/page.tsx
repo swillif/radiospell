@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NATO, LAPD } from '@/data/alphabets';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-for-police/' },
   title: 'Phonetic Alphabet for Police — LAPD, NYPD & Law Enforcement Guide',
   description: 'Complete guide to police phonetic alphabets used by LAPD, NYPD, and law enforcement agencies. Adam Boy Charles vs NATO — when to use each and why.',
   keywords: 'police phonetic alphabet, LAPD alphabet, law enforcement spelling alphabet, police radio alphabet, cop alphabet, 10 codes phonetic',

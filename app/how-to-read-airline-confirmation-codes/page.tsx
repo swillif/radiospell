@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/how-to-read-airline-confirmation-codes/' },
   title: 'How to Read Airline Confirmation Codes Over the Phone',
   description: 'Spell airline booking confirmation codes, PNR numbers, and record locators clearly using the NATO phonetic alphabet. Stop getting "was that B or D?" on every call.',
   keywords: 'airline confirmation code phonetic, PNR phonetic spelling, booking reference spell, record locator phonetic alphabet',

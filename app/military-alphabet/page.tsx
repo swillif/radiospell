@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NATO, NATO_NUMBERS, MORSE } from '@/data/alphabets';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/military-alphabet/' },
   title: 'Military Alphabet — A to Z Code Words Used by US Armed Forces',
   description: 'The military alphabet (NATO phonetic alphabet) used by the US Army, Navy, Air Force, Marines, and Coast Guard. Complete A-Z with pronunciation guide.',
   keywords: 'military alphabet, army alphabet, military phonetic alphabet, military code words, Marine alphabet',

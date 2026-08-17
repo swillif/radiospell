@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ALL_ALPHABETS, NATO } from '@/data/alphabets';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/french-phonetic-alphabet/' },
   title: 'French Phonetic Alphabet — Anatole Berthe Célestin',
   description: 'The French spelling alphabet: Anatole, Berthe, Célestin, Désiré, Eugène. Complete A-Z with NATO comparison.',
   keywords: 'French phonetic alphabet, French spelling alphabet, alphabet phonetique francais',

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-for-call-centers/' },
   title: 'Phonetic Alphabet for Call Centers — Training Guide & Best Practices',
   description: 'How call center agents use the NATO phonetic alphabet to reduce errors and repeat calls. Training tips, scripts, and printable desk reference.',
   keywords: 'call center phonetic alphabet, customer service alphabet, call center spelling',

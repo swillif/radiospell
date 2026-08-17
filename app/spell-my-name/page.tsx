@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import NameCard from './NameCard';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/spell-my-name/' },
   title: 'Spell My Name — Generate Your Phonetic Name Card',
   description: 'Type your name and get a phonetic spelling card. Never have someone misspell your name on a phone call again. Share, save, or print.',
   keywords: 'spell my name, phonetic name, name in NATO alphabet, spell name phonetically',

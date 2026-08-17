@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { NATO, MORSE } from '@/data/alphabets';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/alpha-bravo-charlie/' },
   title: 'Alpha Bravo Charlie — The NATO Phonetic Alphabet Explained',
   description: 'Alpha Bravo Charlie Delta Echo Foxtrot... Learn the complete NATO phonetic alphabet, what each word means, and use our free converter tool.',
   keywords: 'alpha bravo charlie, alpha bravo charlie delta, phonetic alphabet, ABC military',

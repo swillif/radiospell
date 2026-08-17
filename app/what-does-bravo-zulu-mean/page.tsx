@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/what-does-bravo-zulu-mean/' },
   title: 'What Does Bravo Zulu Mean? Military Phonetic Slang Explained',
   description: 'Bravo Zulu means "Well Done" in military communication. Learn this and other NATO phonetic alphabet slang terms used by the US Navy, Army, and Marines.',
   keywords: 'what does bravo zulu mean, bravo zulu navy, military phonetic slang, Oscar Mike meaning, Lima Charlie meaning, Whiskey Tango Foxtrot, military alphabet slang',

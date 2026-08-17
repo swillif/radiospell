@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-for-travel/' },
   title: 'Phonetic Alphabet for Travelers — Spell Bookings, Names & Codes Clearly',
   description: 'Essential phonetic alphabet guide for travelers. Spell airline confirmation codes, hotel reservations, passport names, and addresses without confusion.',
   keywords: 'phonetic alphabet travel, spell booking code, hotel reservation phonetic, passport name spelling, travel communication tips',

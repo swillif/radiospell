@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { NATO } from '@/data/alphabets';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/phonetic-alphabet-for-kids/' },
   title: 'Phonetic Alphabet for Kids — Fun Ways to Learn A to Z',
   description: 'Teach kids the NATO phonetic alphabet with fun examples and memory tricks. Perfect for classroom use, scouts, young aviation enthusiasts, and curious children.',
   keywords: 'phonetic alphabet for kids, NATO alphabet kids, teach phonetic alphabet children, alpha bravo charlie kids, phonetic alphabet classroom',

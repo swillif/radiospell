@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/military-time-and-phonetic-alphabet/' },
   title: 'Military Time & Phonetic Alphabet — Complete Guide',
   description: 'Learn military time (24-hour clock) and the NATO phonetic alphabet together. Both are essential military communication tools. Includes conversion chart and examples.',
   keywords: 'military time phonetic alphabet, 24 hour clock military, military time chart, military time converter, Zulu time phonetic alphabet',

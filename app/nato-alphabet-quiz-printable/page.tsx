@@ -3,6 +3,7 @@ import { NATO, MORSE } from '@/data/alphabets';
 import { PrintQuizButton, PrintAnswerKeyButton } from './PrintButtons';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://radiospell.com/nato-alphabet-quiz-printable/' },
   title: 'NATO Alphabet Quiz — Printable Worksheet for Practice & Training',
   description: 'Free printable NATO phonetic alphabet quiz worksheets. Perfect for call center training, classroom use, military prep, and self-study. Fill-in-the-blank and matching formats.',
   keywords: 'NATO alphabet quiz printable, phonetic alphabet worksheet, NATO alphabet test, call center training quiz, phonetic alphabet practice sheet',
