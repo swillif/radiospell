@@ -1,13 +1,12 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://radiospell.com'),
-  title: { default: 'RadioSpell — Phonetic Alphabet Converter & Aviation Reference', template: '%s | RadioSpell.com' },
+  title: { default: 'RadioSpell â€” Phonetic Alphabet Converter & Aviation Reference', template: '%s | RadioSpell.com' },
   description: 'Free NATO phonetic alphabet converter, airport codes, airline callsigns, and aviation reference. Spell any text clearly over the phone.',
   keywords: 'phonetic alphabet, NATO alphabet, alpha bravo charlie, airport codes, airline codes',
   openGraph: { type: 'website', locale: 'en_US', url: 'https://radiospell.com', siteName: 'RadioSpell.com' },
-  alternates: { canonical: 'https://radiospell.com' },
   other: { 'google-adsense-account': 'ca-pub-4968149586636962' },
 };
 
@@ -50,9 +49,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/airline-codes/" className="hover:text-amber-600 transition">Airlines</a>
               <a href="/metar-decoder/" className="hover:text-amber-600 transition">METAR Decoder</a>
               <a href="/history/" className="hover:text-amber-600 transition">History</a>
-              <a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700 transition">All Guides ✦</a>
+              <a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700 transition">All Guides âœ¦</a>
             </nav>
-            <button className="md:hidden text-gray-600 text-2xl" aria-label="Menu">☰</button>
+            <button className="md:hidden text-gray-600 text-2xl" aria-label="Menu">â˜°</button>
           </div>
         </header>
 
@@ -102,12 +101,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li><a href="/phonetic-alphabet-for-call-centers/" className="hover:text-amber-600">For Call Centers</a></li>
                   <li><a href="/phonetic-alphabet-for-it-support/" className="hover:text-amber-600">For IT Support</a></li>
                   <li><a href="/phonetic-alphabet-for-travel/" className="hover:text-amber-600">For Travelers</a></li>
-                  <li><a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700">All Guides →</a></li>
+                  <li><a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700">All Guides â†’</a></li>
                 </ul>
               </div>
             </div>
             <div className="border-t pt-4 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-gray-400">
-              <p>© 2026 RadioSpell.com — Phonetic Alphabet Tools &amp; Aviation Reference</p>
+              <p>Â© 2026 RadioSpell.com â€” Phonetic Alphabet Tools &amp; Aviation Reference</p>
               <div className="flex gap-4">
                 <a href="/privacy/" className="hover:text-amber-600">Privacy Policy</a>
                 <a href="/about/" className="hover:text-amber-600">About</a>
