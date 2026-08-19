@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: { params: { iata: string } })
     title: `${ap.iata} — ${ap.name} | Airport Code & Phonetic Spelling`,
     description: `${ap.iata} is the IATA code for ${ap.name} in ${ap.city}, ${ap.country}. NATO phonetic: ${ap.phonetic}. Airlines, nearby airports, location & more.`,
     alternates: { canonical: `https://radiospell.com/airport/${ap.iata}/` },
+    robots: { index: false, follow: true },
   };
 }
 

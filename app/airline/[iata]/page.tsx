@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: { iata: string } })
     title: `${al.name} (${al.iata}/${al.icao}) — Code, Callsign & Routes`,
     description: `${al.name}: IATA ${al.iata}, ICAO ${al.icao}${al.callsign ? `, callsign "${al.callsign}"` : ''}. View destinations and details.`,
     alternates: { canonical: `https://radiospell.com/airline/${al.iata}/` },
+    robots: { index: false, follow: true },
   };
 }
 

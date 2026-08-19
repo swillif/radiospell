@@ -1,6 +1,3 @@
-import airports from '@/data/airports.json';
-import airlines from '@/data/airlines.json';
-
 const BASE = 'https://radiospell.com';
 
 export default function sitemap() {
@@ -29,23 +26,8 @@ export default function sitemap() {
     priority: path === '/' ? 1.0 : 0.7,
   }));
 
-  const airportPages = (airports as any[])
-    .filter(a => /^[A-Z0-9]{3}$/i.test(a.iata))
-    .map(a => ({
-      url: `${BASE}/airport/${a.iata}/`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.4,
-    }));
-
-  const airlinePages = (airlines as any[])
-    .filter(a => /^[A-Z0-9]{2}$/i.test(a.iata))
-    .map(a => ({
-      url: `${BASE}/airline/${a.iata}/`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.4,
-    }));
-
-  return [...staticPages, ...airportPages, ...airlinePages];
+  // Airport and airline detail pages are noindexed (thin/templated content) and
+  // intentionally excluded from the sitemap — see app/airport/[iata]/page.tsx
+  // and app/airline/[iata]/page.tsx.
+  return staticPages;
 }
