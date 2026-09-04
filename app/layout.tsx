@@ -1,5 +1,17 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import MobileNav from '@/components/MobileNav';
+
+const NAV_LINKS = [
+  { href: '/', label: 'Converter' },
+  { href: '/call-mode/', label: '📞 Call Mode' },
+  { href: '/nato-phonetic-alphabet/', label: 'NATO Alphabet' },
+  { href: '/airport-codes/', label: 'Airports' },
+  { href: '/airline-codes/', label: 'Airlines' },
+  { href: '/metar-decoder/', label: 'METAR Decoder' },
+  { href: '/history/', label: 'History' },
+  { href: '/guides/', label: 'All Guides ✦', highlight: true },
+];
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://radiospell.com'),
@@ -43,16 +55,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               RadioSpell.com
             </a>
             <nav className="hidden md:flex gap-5 text-sm font-medium text-gray-600">
-              <a href="/" className="hover:text-amber-600 transition">Converter</a>
-              <a href="/call-mode/" className="hover:text-amber-600 transition">📞 Call Mode</a>
-              <a href="/nato-phonetic-alphabet/" className="hover:text-amber-600 transition">NATO Alphabet</a>
-              <a href="/airport-codes/" className="hover:text-amber-600 transition">Airports</a>
-              <a href="/airline-codes/" className="hover:text-amber-600 transition">Airlines</a>
-              <a href="/metar-decoder/" className="hover:text-amber-600 transition">METAR Decoder</a>
-              <a href="/history/" className="hover:text-amber-600 transition">History</a>
-              <a href="/guides/" className="text-amber-600 font-semibold hover:text-amber-700 transition">All Guides ✦</a>
+              {NAV_LINKS.map(l => (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className={l.highlight ? 'text-amber-600 font-semibold hover:text-amber-700 transition' : 'hover:text-amber-600 transition'}
+                >
+                  {l.label}
+                </a>
+              ))}
             </nav>
-            <button className="md:hidden text-gray-600 text-2xl" aria-label="Menu">☰</button>
+            <MobileNav links={NAV_LINKS} />
           </div>
         </header>
 

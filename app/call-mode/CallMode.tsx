@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { NATO, NATO_NUMBERS, toPhoneticArray } from '@/data/alphabets';
 
 const ROWS = [
@@ -13,7 +13,31 @@ const ROWS = [
 export default function CallMode() {
   const [text, setText] = useState('');
   const [autoSpeak, setAutoSpeak] = useState(true);
+  const [installEvent, setInstallEvent] = useState<any>(null);
+  const [installed, setInstalled] = useState(false);
+  const [isIOS, setIsIOS] = useState(false);
   const prevLen = useRef(0);
+
+  useEffect(() => {
+    const standalone = window.matchMedia('(display-mode: standalone)').matches || (window.navigator as any).standalone === true;
+    setInstalled(standalone);
+    setIsIOS(/iphone|ipad|ipod/i.test(window.navigator.userAgent));
+
+    const onPrompt = (e: any) => {
+      e.preventDefault();
+      setInstallEvent(e);
+    };
+    window.addEventListener('beforeinstallprompt', onPrompt);
+    window.addEventListener('appinstalled', () => setInstalled(true));
+    return () => window.removeEventListener('beforeinstallprompt', onPrompt);
+  }, []);
+
+  const install = async () => {
+    if (!installEvent) return;
+    installEvent.prompt();
+    await installEvent.userChoice;
+    setInstallEvent(null);
+  };
 
   const converted = toPhoneticArray(text);
   const last = converted.length ? converted[converted.length - 1] : null;
@@ -128,9 +152,27 @@ export default function CallMode() {
         ))}
       </div>
 
-      <p className="text-center text-xs text-gray-400 mt-4">
-        Tip: tap the <strong>Share</strong> icon (iPhone) or menu (Android) and choose <strong>Add to Home Screen</strong> to open this instantly next time.
-      </p>
+      {!installed && (
+        <div className="mt-4 text-center">
+          {installEvent ? (
+            <button
+              onClick={install}
+              className="px-5 py-2.5 rounded-lg text-sm font-semibold bg-amber-500 text-white hover:bg-amber-600 transition"
+            >
+              ⬇️ Install Call Mode
+            </button>
+          ) : isIOS ? (
+            <p className="text-xs text-gray-400">
+              Tap the <strong>Share</strong> button in Safari's toolbar (square with an arrow, usually at the bottom of the screen),
+              then scroll down and choose <strong>Add to Home Screen</strong>. This only works in Safari — not Chrome, Facebook, or other in-app browsers on iPhone.
+            </p>
+          ) : (
+            <p className="text-xs text-gray-400">
+              Open your browser's menu (usually ⋮ or ⋯) and look for <strong>Add to Home screen</strong> or <strong>Install app</strong>.
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 }
