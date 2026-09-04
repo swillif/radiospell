@@ -24,7 +24,21 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <section className="max-w-3xl mx-auto text-center pt-10 pb-4 px-4">
+      {/* CALL MODE BANNER — first thing visible, so it's not just a nav link people happen upon */}
+      <section className="max-w-3xl mx-auto px-4 pt-6">
+        <a href="/call-mode/" className="flex items-center justify-between gap-3 bg-gray-900 hover:bg-gray-800 text-white rounded-xl px-5 py-4 transition group">
+          <div className="flex items-center gap-3 min-w-0">
+            <span className="text-2xl shrink-0">📞</span>
+            <div className="min-w-0">
+              <div className="font-bold text-sm sm:text-base">On a call right now? Try Call Mode</div>
+              <div className="text-xs sm:text-sm text-gray-300">Install it for instant, tap-to-speak spelling — no more repeating yourself</div>
+            </div>
+          </div>
+          <span className="text-amber-400 font-bold text-lg shrink-0 group-hover:translate-x-1 transition">→</span>
+        </a>
+      </section>
+
+      <section className="max-w-3xl mx-auto text-center pt-6 pb-4 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">Phonetic Alphabet Converter</h1>
         <p className="text-gray-500 max-w-xl mx-auto">
           Type any text — a name, confirmation code, serial number, or password —
