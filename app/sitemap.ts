@@ -6,7 +6,7 @@ export default function sitemap() {
   const staticPages = [
     '/', '/nato-phonetic-alphabet/', '/military-alphabet/', '/police-alphabet/',
     '/alpha-bravo-charlie/', '/phonetic-alphabet-chart/', '/quiz/', '/spell-my-name/',
-    '/metar-decoder/', '/airport-codes/', '/airline-codes/', '/history/',
+    '/call-mode/', '/metar-decoder/', '/airport-codes/', '/airline-codes/', '/history/',
     '/which-alphabet/', '/aviation-numbers/', '/how-to-spell-over-the-phone/',
     '/phonetic-alphabet-for-call-centers/', '/phonetic-alphabet-for-healthcare/',
     '/phonetic-alphabet-for-it-support/', '/phonetic-alphabet-for-shipping/',

@@ -12,6 +12,7 @@ export default function GuidesPage() {
       title: 'Interactive Tools', icon: '🛠️',
       links: [
         { href: '/', label: 'Phonetic Converter', desc: 'Convert any text to NATO phonetic alphabet instantly' },
+        { href: '/call-mode/', label: '📞 Call Mode', desc: 'One-screen, tap-to-speak tool built for use during a live call' },
         { href: '/quiz/', label: 'Practice Quiz', desc: 'Test your knowledge with interactive flashcards' },
         { href: '/spell-my-name/', label: 'Spell My Name', desc: 'Generate a shareable phonetic name card' },
         { href: '/metar-decoder/', label: 'METAR Weather Decoder', desc: 'Decode aviation weather reports' },

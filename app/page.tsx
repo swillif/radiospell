@@ -79,6 +79,7 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold mb-3 mt-8">Explore More</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {[
+            { href: '/call-mode/', title: '📞 Call Mode', desc: 'Fast, tap-to-speak tool built for use during a live call' },
             { href: '/nato-phonetic-alphabet/', title: 'Full NATO Alphabet', desc: 'Complete A-Z reference with Morse code' },
             { href: '/quiz/', title: 'Practice Quiz', desc: 'Test your phonetic alphabet knowledge' },
             { href: '/airport-codes/', title: 'Airport Codes', desc: '7,900+ airports with phonetic spelling' },
