@@ -175,10 +175,10 @@ export default function PhoneticConverter() {
                 ].map(ex => (
                   <button key={ex.example} onClick={() => setInput(ex.example)}
                     className="flex items-center gap-2.5 p-3 bg-gray-50 border border-gray-200 rounded-lg hover:border-amber-400 hover:bg-amber-50 transition text-left">
-                    <span className="text-lg">{ex.icon}</span>
-                    <div>
+                    <span className="text-lg shrink-0">{ex.icon}</span>
+                    <div className="min-w-0">
                       <div className="text-xs text-gray-500">{ex.label}</div>
-                      <div className="text-sm font-mono font-semibold text-gray-800">{ex.example}</div>
+                      <div className="text-sm font-mono font-semibold text-gray-800 truncate">{ex.example}</div>
                     </div>
                   </button>
                 ))}
